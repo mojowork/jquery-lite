@@ -7,4 +7,6 @@
 ## Usage
     ·参考jQuery文档
 
- 
+ ## Function
+     - [ ] DOM选择器
+     - [ ] ready函数

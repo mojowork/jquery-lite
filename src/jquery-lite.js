@@ -3,11 +3,18 @@
 *  @author chaoshuai
 *  @date 2018/3/8
 * */
-(function () {
+(function (window) {
 
-    function jquery() {
-        this.name = 'chaoshuai';
+    function jquery () {
+       return new init();
     }
 
+    // 真实的构造函数
+    const init = function () {
+        this.name = 'chaoshuai';
+    };
+
+    init.prototype = jquery.prototype;
+
     window.$ = window.jquery = jquery;
-}());
+}(window));
